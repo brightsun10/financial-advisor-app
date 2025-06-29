@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-google-genai
+redis
+yfinance
+python-dotenv
+langchain-community
+beautifulsoup4
+openai
+langchain-openai
