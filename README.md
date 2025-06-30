@@ -1,10 +1,16 @@
+---
+
 # AI Financial Advisor 
 
 📈This project is a prototype of an autonomous financial advisor built with Python. It uses a powerful agentic AI framework to provide financial information and advice through an interactive chat interface.This agent is powered by Google's Gemini LLM, structured with the LangChain framework, and deployed as a user-friendly web application using Streamlit.
 
+---
+
 ## Phase 1 Features
 
 Interactive Chat Interface: A clean web UI built with Streamlit to chat with the agent.Agentic AI Core: Utilizes the LangChain framework to create a "ReAct" (Reasoning and Acting) agent that can make decisions.Custom Tools: The agent is equipped with a tool to fetch real-time stock prices using the yfinance library.Persistent Memory: It remembers your conversation history within a session using a Redis database, allowing for contextual follow-up questions.
+
+---
 
 ## Tech Stack
 
@@ -13,6 +19,8 @@ Interactive Chat Interface: A clean web UI built with Streamlit to chat with the
 - Memory: Redis
 - Tools: yfinance for stock data
 - Frontend/Deployment: Streamlit
+
+---
 
 ## Prerequisites
 
@@ -27,14 +35,19 @@ docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:lat
 
 - Google AI API Key: You need a valid API key for the Gemini model. You can get one from Google AI Studio.
 
+---
 
 ## Project Setup
 
 Follow these steps to get the application running on your local machine.
 
-### 1. Create Project DirectoryCreate a folder for your project and place the app.py and tools.py files inside it.mkdir financial_advisor
+#### 1. Create Project DirectoryCreate a folder for your project and place the app.py and tools.py files inside it.
+
+mkdir financial_advisor
+
 cd financial_advisor
-### 2. Create a Virtual EnvironmentIt is highly recommended to use a virtual environment to manage dependencies.
+
+#### 2. Create a Virtual EnvironmentIt is highly recommended to use a virtual environment to manage dependencies.
 
 Create the environment
 
@@ -76,6 +89,8 @@ streamlit run app.py
 
 Your web browser should automatically open a new tab with the application running. If not, navigate to http://localhost:8501.How to UseSimply type your financial questions into the chat box at the bottom of the page. For this initial phase, the agent is best equipped to handle stock price lookups.Example questions:"What is the current stock price of Google?""Can you get me the prices for TSLA and AMZN?""How much is a share of AAPL?"
 
+---
+
 ## Project Structure
 
 financial_advisor/
@@ -89,3 +104,11 @@ financial_advisor/
 ├── tools.py                # Contains custom tools for the LangChain agent
 
 └── requirements.txt        # List of Python dependencies
+
+---
+
+## Author 
+
+Made with ❤️ by Nithin P (brightsun10)
+
+---
