@@ -19,7 +19,9 @@ Before you begin, ensure you have the following installed and configured:
 - Python 3.8+
 - Redis: You must have a Redis instance running.
 
-The easiest way to get one is with Docker:docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+The easiest way to get one is with Docker:
+
+docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
 
 - Google AI API Key: You need a valid API key for the Gemini model. You can get one from Google AI Studio.
 
@@ -28,9 +30,9 @@ The easiest way to get one is with Docker:docker run -d --name redis-stack -p 63
 
 Follow these steps to get the application running on your local machine.
 
-1. Create Project DirectoryCreate a folder for your project and place the app.py and tools.py files inside it.mkdir financial_advisor
+### 1. Create Project DirectoryCreate a folder for your project and place the app.py and tools.py files inside it.mkdir financial_advisor
 cd financial_advisor
-2. Create a Virtual EnvironmentIt is highly recommended to use a virtual environment to manage dependencies.
+### 2. Create a Virtual EnvironmentIt is highly recommended to use a virtual environment to manage dependencies.
 
 Create the environment
 
@@ -46,7 +48,7 @@ On macOS/Linux:
 
 source venv/bin/activate
 
-3. Install Dependencies
+### 3. Install Dependencies
 
 Create a requirements.txt file with the contents from the document provided, and then install all the necessary packages.
 
@@ -64,7 +66,7 @@ The connection URL for your running Redis instance
 
 REDIS_URL="redis://localhost:6379/0"
 
-5. Run the Application
+### 4. Run the Application
 
 You are now ready to start the AI Financial Advisor! Run the following command in your terminal:
 
@@ -72,7 +74,7 @@ streamlit run app.py
 
 Your web browser should automatically open a new tab with the application running. If not, navigate to http://localhost:8501.How to UseSimply type your financial questions into the chat box at the bottom of the page. For this initial phase, the agent is best equipped to handle stock price lookups.Example questions:"What is the current stock price of Google?""Can you get me the prices for TSLA and AMZN?""How much is a share of AAPL?"
 
-Project Structure
+## Project Structure
 
 financial_advisor/
 
