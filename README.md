@@ -2,7 +2,9 @@
 
 📈This project is a prototype of an autonomous financial advisor built with Python. It uses a powerful agentic AI framework to provide financial information and advice through an interactive chat interface.This agent is powered by Google's Gemini LLM, structured with the LangChain framework, and deployed as a user-friendly web application using Streamlit.
 
-## Phase 1 FeaturesInteractive Chat Interface: A clean web UI built with Streamlit to chat with the agent.Agentic AI Core: Utilizes the LangChain framework to create a "ReAct" (Reasoning and Acting) agent that can make decisions.Custom Tools: The agent is equipped with a tool to fetch real-time stock prices using the yfinance library.Persistent Memory: It remembers your conversation history within a session using a Redis database, allowing for contextual follow-up questions.
+## Phase 1 Features
+
+Interactive Chat Interface: A clean web UI built with Streamlit to chat with the agent.Agentic AI Core: Utilizes the LangChain framework to create a "ReAct" (Reasoning and Acting) agent that can make decisions.Custom Tools: The agent is equipped with a tool to fetch real-time stock prices using the yfinance library.Persistent Memory: It remembers your conversation history within a session using a Redis database, allowing for contextual follow-up questions.
 
 ## Tech Stack
 
